@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="424.0" style="-fx-background-color: #750615;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entities.SignUpController">
+    <children>
+        <Pane layoutY="-14.0" prefHeight="575.0" prefWidth="429.0" style="-fx-background-color: #750615;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-14.0">
+            <children>
+                <TextField fx:id="txtName" layoutX="75.0" layoutY="77.0" prefHeight="32.0" prefWidth="278.0" promptText="name" style="-fx-border-color: transparent transparent white transparent; -fx-text-fill: white;" styleClass="txtField" stylesheets="@../styling/fullpackstyling.css">  <font>
+                    <Font name="Century Gothic" size="13.0" />
+                </font></TextField>
+                <TextField fx:id="txtSurname" layoutX="75.0" layoutY="130.0" prefHeight="32.0" prefWidth="278.0" promptText="surname" style="-fx-border-color: transparent transparent white transparent; -fx-text-fill: white;" styleClass="txtField" stylesheets="@../styling/fullpackstyling.css">  <font>
+                    <Font name="Century Gothic" size="13.0" />
+                </font></TextField>
+                <TextField fx:id="txtEmail" layoutX="75.0" layoutY="186.0" prefHeight="32.0" prefWidth="278.0" promptText="email" style="-fx-border-color: transparent transparent white transparent; -fx-text-fill: white;" styleClass="txtField" stylesheets="@../styling/fullpackstyling.css">  <font>
+                    <Font name="Century Gothic" size="13.0" />
+                </font></TextField>
+                <TextField fx:id="txtUser" layoutX="75.0" layoutY="306.0" prefHeight="32.0" prefWidth="278.0" promptText="username" style="-fx-border-color: transparent transparent white transparent; -fx-text-fill: white;" styleClass="txtField" stylesheets="@../styling/fullpackstyling.css">  <font>
+                    <Font name="Century Gothic" size="13.0" />
+                </font></TextField>
+                <PasswordField fx:id="txtPassword" layoutX="75.0" layoutY="365.0" prefHeight="32.0" prefWidth="278.0" promptText="password" style="-fx-border-color: transparent transparent white transparent; -fx-text-fill: white;" styleClass="txtField" stylesheets="@../styling/fullpackstyling.css">  <font>
+                    <Font name="Century Gothic" size="13.0" />
+                </font></PasswordField>
+
+                <Button fx:id="btnSave" layoutX="76.0" layoutY="518.0" mnemonicParsing="false" onAction="#insertUser" prefHeight="32.0" prefWidth="278.0" styleClass="button" stylesheets="@../styling/fullpackstyling.css" text="SIGN UP">  <font>
+                    <Font name="Century Gothic" size="13.0" />
+                </font></Button>
+                <Label fx:id="lblError" layoutX="75.0" layoutY="467.0" prefHeight="16.0" prefWidth="278.0" textAlignment="CENTER" textFill="WHITE"> </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

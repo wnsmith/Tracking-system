@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #FFFF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entities.LoginController">
+    <children>
+        <AnchorPane fx:id="leftLogin" prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #750615;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <Pane layoutX="488.0" layoutY="102.0" style="-fx-background-color: #FFFF;" styleClass="paneLogin" AnchorPane.bottomAnchor="71.0" AnchorPane.topAnchor="102.0">
+            <children>
+                <TextField fx:id="txtUsername" depthTest="DISABLE" layoutX="7.0" prefHeight="34.0" prefWidth="275.0" promptText="username" style="-fx-border-color: transparent transparent #750615 transparent;" styleClass="txtField" stylesheets="@../styling/fullpackstyling.css">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></TextField>
+                <PasswordField fx:id="txtPassword" depthTest="DISABLE" layoutX="7.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0" promptText="password" style="-fx-border-color: transparent transparent #750615 transparent;" styleClass="txtField" stylesheets="@../styling/fullpackstyling.css">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></PasswordField>
+                <Button fx:id="btnSignin" layoutX="4.0" layoutY="165.0" mnemonicParsing="false" onAction="#onButtonSignIn" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #750615;" stylesheets="@../styling/fullpackstyling.css" text="Sign in" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font></Button>
+
+                <Button fx:id="btnSignup" layoutX="4.0" layoutY="282.0" mnemonicParsing="false" onAction="#onButtonSignup" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #750615;" stylesheets="@../styling/fullpackstyling.css" text="Sign up" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic" size="15.0" />
+                    </font></Button>
+                <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                    <font>
+                        <Font name="Segoe UI" size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
